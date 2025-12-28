@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="ru" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkyPhone — продажа смартфонов</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="theme.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="SkyPhone">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text">SkyPhone</span>
+        </a>
+
+        <nav class="nav" aria-label="Навигация">
+          <a class="nav__link" href="#catalog">Каталог</a>
+          <a class="nav__link" href="#delivery">Доставка</a>
+          <a class="nav__link" href="#contacts">Контакты</a>
+        </nav>
+
+        <button class="theme-toggle" type="button" id="themeToggle" aria-pressed="false">
+          <span class="theme-toggle__dot" aria-hidden="true"></span>
+          <span class="theme-toggle__text" id="themeToggleText">Тема: Светлая</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <p class="badge">Новые поступления • Гарантия 12 месяцев</p>
+            <h1 class="hero__title">Смартфоны без лишнего — быстро и удобно</h1>
+            <p class="hero__subtitle">
+              Подберите телефон под задачи: камера, батарея, производительность. Доставка по городу в день заказа.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#catalog">Смотреть каталог</a>
+              <a class="btn btn--ghost" href="#contacts">Задать вопрос</a>
+            </div>
+          </div>
+
+          <div class="hero__showcase" aria-hidden="true">
+            <div class="phone-mock">
+              <div class="phone-mock__screen">
+                <div class="phone-mock__chip">5G</div>
+                <div class="phone-mock__lines">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="hero__bubbles">
+              <div class="bubble">Быстрая доставка</div>
+              <div class="bubble">Оригинальные устройства</div>
+              <div class="bubble">Оплата при получении</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="catalog">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Каталог</h2>
+            <p class="section__desc">6 популярных моделей — добавьте свои названия/цены.</p>
+          </div>
+
+          <div class="grid">
+            <article class="card">
+              <div class="card__img" aria-hidden="true"></div>
+              <div class="card__body">
+                <h3 class="card__title">Astra One 128GB</h3>
+                <p class="card__meta">6.5" • 5000 mAh • NFC</p>
+                <div class="card__row">
+                  <span class="price">24 990 ₽</span>
+                  <a class="btn btn--small" href="#contacts">Купить</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__img" aria-hidden="true"></div>
+              <div class="card__body">
+                <h3 class="card__title">Astra Pro 256GB</h3>
+                <p class="card__meta">6.7" • 120 Hz • 64 MP</p>
+                <div class="card__row">
+                  <span class="price">34 990 ₽</span>
+                  <a class="btn btn--small" href="#contacts">Купить</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__img" aria-hidden="true"></div>
+              <div class="card__body">
+                <h3 class="card__title">Nimbus Lite 64GB</h3>
+                <p class="card__meta">6.4" • 4000 mAh • Dual SIM</p>
+                <div class="card__row">
+                  <span class="price">17 990 ₽</span>
+                  <a class="btn btn--small" href="#contacts">Купить</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__img" aria-hidden="true"></div>
+              <div class="card__body">
+                <h3 class="card__title">Nimbus X 128GB</h3>
+                <p class="card__meta">AMOLED • 50 MP • 33W</p>
+                <div class="card__row">
+                  <span class="price">26 490 ₽</span>
+                  <a class="btn btn--small" href="#contacts">Купить</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__img" aria-hidden="true"></div>
+              <div class="card__body">
+                <h3 class="card__title">Orion Ultra 256GB</h3>
+                <p class="card__meta">8 GB RAM • 5000 mAh • 5G</p>
+                <div class="card__row">
+                  <span class="price">41 990 ₽</span>
+                  <a class="btn btn--small" href="#contacts">Купить</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__img" aria-hidden="true"></div>
+              <div class="card__body">
+                <h3 class="card__title">Orion Max 512GB</h3>
+                <p class="card__meta">Камера 108 MP • 120 Hz • IP68</p>
+                <div class="card__row">
+                  <span class="price">59 990 ₽</span>
+                  <a class="btn btn--small" href="#contacts">Купить</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="delivery">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Доставка и оплата</h2>
+            <p class="section__desc">Просто, прозрачно, без скрытых условий.</p>
+          </div>
+
+          <div class="features">
+            <div class="feature">
+              <h3 class="feature__title">Доставка</h3>
+              <p class="feature__text">По городу — в день заказа. По России — СДЭК/Почта.</p>
+            </div>
+            <div class="feature">
+              <h3 class="feature__title">Оплата</h3>
+              <p class="feature__text">Картой или наличными при получении, перевод, счёт для юр.лиц.</p>
+            </div>
+            <div class="feature">
+              <h3 class="feature__title">Гарантия</h3>
+              <p class="feature__text">Проверка при курьере + гарантия магазина 12 месяцев.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contacts">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Контакты</h2>
+            <p class="section__desc">Напишите — поможем выбрать и оформим заказ.</p>
+          </div>
+
+          <div class="contact">
+            <div class="contact__card">
+              <div class="contact__row">
+                <div class="contact__label">Телефон</div>
+                <a class="contact__value" href="tel:+79999999999">+7 (999) 999-99-99</a>
+              </div>
+              <div class="contact__row">
+                <div class="contact__label">Email</div>
+                <a class="contact__value" href="mailto:sales@skyphone.ru">sales@skyphone.ru</a>
+              </div>
+              <div class="contact__row">
+                <div class="contact__label">Адрес</div>
+                <div class="contact__value">Ваш город, ул. Примерная, 10</div>
+              </div>
+            </div>
+
+            <form class="form" onsubmit="return false" aria-label="Форма заявки">
+              <label class="field">
+                <span class="field__label">Имя</span>
+                <input class="field__input" type="text" placeholder="Как к вам обращаться" />
+              </label>
+              <label class="field">
+                <span class="field__label">Телефон</span>
+                <input class="field__input" type="tel" placeholder="+7 ..." />
+              </label>
+              <label class="field">
+                <span class="field__label">Что хотите купить</span>
+                <input class="field__input" type="text" placeholder="Например: Astra Pro 256GB" />
+              </label>
+              <button class="btn btn--primary" type="submit">Отправить заявку</button>
+              <p class="form__hint">Нажимая кнопку, вы соглашаетесь на обработку данных.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">Манасытов Ярослав x Николаев Уххан</div>
+        <div class="footer__right">Сделано на HTML + CSS</div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
